@@ -1,0 +1,11 @@
+.brand{
+  width:auto;
+  height: 65px;
+  margin: 10px 0 0 10px;
+}
+
+@media (min-width:1024px){
+  .brand{
+    height: 90px;
+  }
+}

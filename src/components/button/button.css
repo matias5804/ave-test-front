@@ -1,0 +1,15 @@
+.btn-add {
+  font-size: medium;
+}
+
+.div-btn-favorites{
+  display:flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.div-btn-favorites:hover{
+  transform: scale(1.25);
+  transition-duration: 1s;
+}

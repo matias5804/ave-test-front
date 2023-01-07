@@ -1,0 +1,19 @@
+.searchInput{
+    width: 100px;
+    height: 25px;
+    border-radius: 3px;
+    padding: 5px;  
+    border: 1px solid black
+}
+
+@media (min-width:768px){
+    .searchInput{
+        width: 150px;
+    }
+}
+
+@media (min-width:1024px){
+    .searchInput{
+        width: 200px;
+    }
+}

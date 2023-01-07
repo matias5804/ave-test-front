@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* 
+::before,
+::after{/*incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra.*/
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+*{ /* reseteo CSS*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(126, 107, 144, 0.328);
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display:flex ;
+    align-items: center;
+}
+
+.nav-div-input-btn{
+    justify-content: flex-end;
+    display: flex;
+    gap: 0.5rem;
+    align-items:center;
+    width: 57%;
+    padding-right:20px ;
+    margin-top: 10px;
+}
+
+.nav-div-brand{
+    width: 43%;
+}
+
+.div-btn-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.spinner{
+   margin-top: 200px;
+   margin-bottom:400px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.header{
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.821);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+    z-index: 2;
+}
+
+@media (min-width:600px){
+    
+    .nav-div-input{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .nav{
+        width: 600px;
+        margin: 0 auto;
+    }
+} 
+
+@media (min-width:768px){
+    .nav-div-input-btn{
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+    .nav{
+        width: 700px;
+    }
+}
+
+@media (min-width:1024px){
+    .nav{
+        justify-content: space-around;
+        width: 900px;
+    }
+}

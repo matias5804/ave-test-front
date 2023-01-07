@@ -1,0 +1,11 @@
+.footer h5 {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid black;
+}
+
+.footer {
+  width: 100%;
+  align-self: flex-end;
+}
